@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    color: #272830;
+}
+body {
+    background-color: #f2f8ff;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;   
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.card { 
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 400px;
+    margin: 15px auto;
+}
+
+.border-about { border-bottom: 5px solid #FCBA04; }
+.border-course { border-bottom: 5px solid #dc2f02; }
+.border-movie { border-bottom: 5px solid #A50104ed; }
+.border-mood { border-bottom: 5px solid #720006; }
+.border-fact { border-bottom: 5px solid #250001; }
+
+.about {
+    padding: 0 10px;
+}
+
+.course, .fact {
+    padding: 0 10px;
+}
+
+.course-list { list-style-type: none; }
+
+.course-list li { margin: 4px 0px; }
+
+.fact-list { list-style-type: none; }
+
+.fact-list li { margin: 4px 0px; }
+
+.movie-list li > a {
+    float: right;
+}
+
+.movie-list li {
+    margin: 4px 0px; 
+    padding: 5px 20px;
+}
+
+a.imdb-btn {
+    background-color: #fff1c3;
+    color: #a78800;
+    border-radius: 10px;
+    padding: 3px 14px;
+    text-decoration: none;   
+    text-transform: uppercase; 
+    font-size: 12px;
+}
+
+a.imdb-btn:hover {
+    background-color: #ffd23d;
+    color: #fff1c3; 
+    text-decoration: underline; /* added for lab exercise */
+}
+
+.mood {
+    display: flex;
+}
+
+.mood-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20% 5px 20%;
+}
+
+.mood img {
+    width: 50%;
+}
+
+.l0-bl { padding-left: 10px; border-left: 5px solid #9b2226; }
+.l1-bl { padding-left: 10px; border-left: 5px solid #ca6702; }
+.l2-bl { padding-left: 10px; border-left: 5px solid #94d2bd; }
+.l3-bl { padding-left: 10px; border-left: 5px solid #001219; }
+.l4-bl { padding-left: 10px; border-left: 5px solid #ae2012; }
+.l5-bl { padding-left: 10px; border-left: 5px solid #ee9b00; }
+
+/* added for lab exercise */
+.text-style-1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+.text-style-2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+    
+}
+
+p>strong { color: #ee9b00; }
+
+.movie-detail dt {
+    font-size: 13px;
+    color: #ca6702;
+}
+
+.movie-detail dd {
+    font-size: 11px;
+}
