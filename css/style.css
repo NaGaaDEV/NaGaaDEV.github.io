@@ -25,6 +25,14 @@ body {
 
 .footer {
     width: auto;
+    border: 2px solid #e6edf3;
+    border-radius: 5px;
+    background-color: #f6fbff;
+    text-decoration: unset; 
+}
+
+.footer a {
+    text-decoration: none;
 }
 
 .card { 
