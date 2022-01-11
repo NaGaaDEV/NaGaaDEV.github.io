@@ -7,17 +7,24 @@
 body {
     background-color: #f2f8ff;
     font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
+    margin: 0;    
 }
 
 .center {
     margin: auto;
     width: 50%;
     padding: 10px;
+}
+
+.footer {
+    width: auto;
 }
 
 .card { 
