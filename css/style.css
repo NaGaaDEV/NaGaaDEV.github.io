@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: #272830;
+}
+body {
+    background-color: #f2f8ff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.card { 
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 400px;
+    margin: auto;
+}
+
+.profile img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.name {
+    background-color: #e8dcc6;
+    text-align: center;
+}
+
+.name h2 {
+    padding-top: 2px;
+    padding-bottom: 6px;
+    margin: 0;
+}
+
+.lab-ul {
+    padding: 0;
+    width: 100%;
+}
+
+.lab-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.lab-info {
+    padding-left: 10px;
+    border-left: 5px solid #c3eaff;
+}
+
+.lab-info span {
+    display: block;
+}
+
+.lab-number {
+    background-color: gray;
+    border-radius: 30px;
+    font-size: 12px;
+    margin: 0;
+    color: white;
+    padding: 0px 5px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50px;
+}
+
+.lab-btn {
+    background-color: #c3eaff;
+    color: #006da7;
+    border-radius: 10px;
+    padding: 8px 14px;
+    text-decoration: none;    
+}
+
+.lab-btn:hover {
+    background-color: #1f9bdd;
+    color: #c3eaff;  
+}
+
+.l0 { background-color: #9b2226; }
+.l1 { background-color: #ca6702; }
+.l2 { background-color: #94d2bd; }
+.l3 { background-color: #001219; }
+.l4 { background-color: #ae2012; }
+.l5 { background-color: #ee9b00; }
+.l6 { background-color: #0a9396; }
+.l7 { background-color: #bb3e03; }
+.l8 { background-color: #e9d8a6; }
+.l9 { background-color: #005f73; }
+
+.l0-bl { border-left: 5px solid #9b2226; }
+.l1-bl { border-left: 5px solid #ca6702; }
+.l2-bl { border-left: 5px solid #94d2bd; }
+.l3-bl { border-left: 5px solid #001219; }
+.l4-bl { border-left: 5px solid #ae2012; }
+.l5-bl { border-left: 5px solid #ee9b00; }
+.l6-bl { border-left: 5px solid #0a9396; }
+.l7-bl { border-left: 5px solid #bb3e03; }
+.l8-bl { border-left: 5px solid #e9d8a6; }
+.l9-bl { border-left: 5px solid #005f73; }
