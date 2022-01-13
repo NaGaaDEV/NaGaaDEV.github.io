@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    color: #272830;
+}
+body {
+    background-color: #f2f8ff;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;    
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+form {
+    display: grid;
+}
+
+input, select {
+    margin-bottom: 12px;
+}
+
+input[type="submit"] {
+    padding: 4px 0;
+    background-color: #94d2bd;
+    border: 2px solid #87ab9e;
+}

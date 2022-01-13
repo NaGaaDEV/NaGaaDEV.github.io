@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-grade.css">
+    <title>Retrieve Grade</title>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <h1>Retrieve your grade</h1>
+            <form action="http://mumstudents.org/params.php">
+                <lable for="name" >Name</lable>
+                <input type="text" name="name" id="">
+                <label for="id">Student ID</label>
+                <input type="text" name="id" id="">
+                <label for="assignment">Select assignment</label>
+                <select name="assignment" id="">
+                    <option value="assign1">Assignment 1: Recipe</option>
+                    <option value="assign2">Assignment 2: Movie Review</option>
+                    <option value="assign3">Assignment 3: avascript and ASCII</option>
+                </select>
+                <label for="agree"><input type="checkbox" name="agree">I am only looking up my own grade.</label>
+                <input type="submit" value="Get Grade!">
+            </form>            
+        </div>
+    </div>
+
+</body>
+</html>
