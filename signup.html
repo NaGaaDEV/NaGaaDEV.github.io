@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-signup.css">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <form action="http://mumstudents.org/params.php" method="post">
+                <fieldset>
+                    <legend>New User Signup:</legend>
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td colspan="2"><input type="text" name="name" size="16"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td colspan="2">
+                                <label for="male"><input type="radio" name="gender" value="male" id="male">Male</label>
+                                <label for="female"><input type="radio" name="gender" value="female" id="female" checked>Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Age:</td>
+                            <td colspan="2"><input type="text" name="age" size="6" maxlength="2"></td>
+                        </tr>
+                        <tr>
+                            <td>Personality type:</td>
+                            <td colspan="2"><input type="text" name="personality" size="6" maxlength="4"> (<a href="http://www.humanmetrics.com/cgi-win/jtypes2.asp">Don't know your type?</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>Favorite OS:</td>
+                            <td colspan="2">
+                                <select name="fav">
+                                    <option value="windows" selected>Windows</option>
+                                    <option value="macosx">Mac OS X</option>
+                                    <option value="linux">Linux</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Seeking age:</td>
+                            <td colspan="2">
+                                <input type="text" name="seekmin" size="6" maxlength="2" placeholder="min"> to                   
+                                <input type="text" name="seekmax" size="6" maxlength="2" placeholder="max"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Sing Up"> </td>
+                            <td colspan="2"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+            <div class="footer">
+                <p class="notice">
+                    This page is for single nerds to meet and date each other! Type in you personal information and wait for the nerdy luv to begin! Thank you for using our site.
+                </p>
+                <p>Results and page (c) Copyright NerdLuv Inc.</p>
+                <a href="#">Back to front page</a>                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
