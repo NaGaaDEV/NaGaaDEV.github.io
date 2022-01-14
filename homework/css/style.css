@@ -22,6 +22,12 @@ body {
     width: 50%;
     padding: 10px;
 }
+@media screen and (max-width: 600px) {
+    .center {
+        width: 100%;
+        padding: 0;
+    }
+}
 
 .footer {
     width: auto;
@@ -41,6 +47,11 @@ body {
     overflow: hidden;
     width: 400px;
     margin: auto;
+}
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
 }
 
 .profile img {
