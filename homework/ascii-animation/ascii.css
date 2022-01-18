@@ -1,0 +1,67 @@
+body {
+    background-color: #CCCCFF;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 32pt;
+    text-align: center;
+    margin: 0;
+}
+
+.txt-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 12pt;
+    font-weight: bold;
+}
+textarea {
+    width: 90%;
+    height: 400px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;    
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+fieldset {
+    border: 5px solid;
+}
+
+.controler {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+button, select {
+    font-weight: bold;
+}
+
+.footer {
+    text-align: right;
+}
+
+.footer > .validate {
+    justify-content: right;
+    padding-left: 2px;
+}
+
+.footer a {
+    display: block;
+}

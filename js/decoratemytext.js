@@ -9,7 +9,7 @@ window.onload = function() {
             const txt = document.getElementById("txt");
             fontInterval = setInterval(function() {
                 // const fs = $("#txt").css('font-size');
-                const fs = window.getComputedStyle(txt, null).getPropertyValue('font-size');;
+                const fs = window.getComputedStyle(txt, null).getPropertyValue('font-size');
                 txt.style.fontSize = parseInt(fs) + 2 + "px";
             }, 500);
         }
