@@ -1,0 +1,7 @@
+.container > * {
+    display: block;
+}
+
+input, button, textarea {
+    margin: 5px 0;
+}
