@@ -7,6 +7,10 @@ window.onload = function(){
         }
         document.getElementById("txt").value = list;
     });
+
+    document.getElementById("rudyTimer").addEventListener("click", () => {
+        setInterval(rudyTimer, 2000);
+    });
 }
 
 var accountInfoList = new Array();
@@ -22,5 +26,11 @@ const Account = (function() {
     return {
         create
     }
-  })();
+})();
+
+
+var rudyTimer = (function() {
+    var alertRudy = function() { document.getElementById("printRudy").innerHTML += "Rudy!" }
+    return alertRudy;
+})();
 
