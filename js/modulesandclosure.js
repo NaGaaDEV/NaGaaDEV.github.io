@@ -3,13 +3,13 @@ window.onload = function(){
         accountInfoList.push(Account.create(document.getElementById("name").value, document.getElementById("deposit").value));
         let list = "";
         for (let i = 0; i < accountInfoList.length; i++) {
-            list += "Account Name : " + accountInfoList[i].name + ", Deposit : " + accountInfoList[i].deposit + "\n";
+            list += "Account Name: " + accountInfoList[i].name + ", Deposit: " + accountInfoList[i].deposit + "\n";
         }
         document.getElementById("txt").value = list;
     });
 
     document.getElementById("rudyTimer").addEventListener("click", () => {
-        setInterval(rudyTimer, 2000);
+        setInterval(rudyTimer, 1000);
     });
 }
 
