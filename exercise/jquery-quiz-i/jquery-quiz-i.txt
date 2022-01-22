@@ -1,5 +1,5 @@
 1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”?
-A jQuery object is an object returned by the jQuery function which is a value of jQuery or of $
+A jQuery object is an object returned by the jQuery function which it self is a value of jQuery or of $
 
 2. Write jQuery code to find all h1 elements that are children of a div element and make their background
 color red.
