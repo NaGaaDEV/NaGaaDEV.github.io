@@ -7,9 +7,6 @@ $(function() {
     const tiles = function() { return $("#puzzlearea > div") };
 
     init = function() {
-        // var puzzleArea = document.getElementById('puzzlearea');
-        // var divs = puzzleArea.getElementsByTagName("div");
-        
         // initialize each piece
         for (var i=0; i< tiles().length; i++) {
             var div = tiles()[i];
@@ -24,12 +21,7 @@ $(function() {
             div.style.top = y + 'px';
             div.style.backgroundImage = 'url("background.jpg")';
             div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
-            
-            // store x and y for later
-            div.x = x;
-            div.y = y;
 
-            //$(div).data("tile", { row: y/100, col: x/100 });
             $(div).attr('data-row', y/100);
             $(div).attr('data-col', x/100);
             $(div).attr('id', "tile-"+y/100+"_"+x/100);
@@ -54,7 +46,8 @@ $(function() {
     function movable(tile) {
         let row = parseInt($(tile).attr('data-row'));
         let col = parseInt($(tile).attr('data-col'));
-        if( (row >= emptyRow - 1 && row <= emptyRow + 1) && (col >= emptyCol - 1 && col <= emptyCol + 1) && ( ((emptyRow + emptyCol) - 1 === (row + col)) || ((emptyRow + emptyCol) + 1 === (row + col)) ) )
+        if( (row >= emptyRow - 1 && row <= emptyRow + 1) && (col >= emptyCol - 1 && col <= emptyCol + 1) 
+        && ( ((emptyRow + emptyCol) - 1 === (row + col)) || ((emptyRow + emptyCol) + 1 === (row + col)) ) )
             return true;
         return false;
     }
@@ -76,14 +69,14 @@ $(function() {
         let movable = Array();
         for(let row = 0; row < 4; row++) {
             for(let col = 0; col < 4; col++) {
-                if( (row >= emptyRow - 1 && row <= emptyRow + 1) && (col >= emptyCol - 1 && col <= emptyCol + 1) && ( ((emptyRow + emptyCol) - 1 === (row + col)) || ((emptyRow + emptyCol) + 1 === (row + col)) ) )
+                if( (row >= emptyRow - 1 && row <= emptyRow + 1) && (col >= emptyCol - 1 && col <= emptyCol + 1) 
+                && ( ((emptyRow + emptyCol) - 1 === (row + col)) || ((emptyRow + emptyCol) + 1 === (row + col)) ) )
                     movable.push({row: row, col: col});
             }
         }
         if(movable.length) {
             let tile = movable[Math.floor(Math.random() * movable.length)];
             move($("#tile-"+tile.row+"_"+tile.col).get(0));
-            //$("#tile-"+tile.row+"_"+tile.col).get(0) ? $("#tile-"+tile.row+"_"+tile.col).get(0).click() : console.log(movable);
         }
     }
 
