@@ -26,8 +26,7 @@ show it is just text (the red bold is gone).
     <p></p>
     <script>
     $(function() {
-		$("p").last().text($("p").first().text());
-		$("p").first().text("");
+		$("p").last().text($("p").first().html());
 	});
     </script>
 </body>
