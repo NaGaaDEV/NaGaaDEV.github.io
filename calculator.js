@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-const calculatorMod = require('./calculateModule');
+const calculatorMod = require('./calculatorModule');
 
 const app = express();
 const urlencodedParser = bodyParser.urlencoded({extended: true});
