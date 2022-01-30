@@ -1,0 +1,16 @@
+link(rel="stylesheet", href="css/style-quiz.css")
+div.container
+    div.center
+        div.card.border-quiz
+            h1 The Number Quiz
+            p Your current score is 
+                strong= score 
+            p Guess the next number in the sequence 
+            p= quiz
+            form(action="submit", method="post") 
+                span Your answer: 
+                input(type="text", name="answer")
+                input(type="hidden", name="quizNumber", value=quizNumber)
+                input(type="hidden", name="score", value=score)
+                br
+                input(type="submit", value="Submit")
