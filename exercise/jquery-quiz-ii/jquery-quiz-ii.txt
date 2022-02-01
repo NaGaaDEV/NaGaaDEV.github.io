@@ -26,10 +26,7 @@ the current element.
         </div>
         <script>
         $(function() {
-            $("div").each(function() {
-            	if($.contains(this, $("ul").get(0)))
-              	$(this).css("color", "blue");
-            })
+            $("div:has(ul)").css("color", "blue");
         });
         </script>
     </body>
